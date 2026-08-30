@@ -1,0 +1,182 @@
+{
+ "hele_shaw": {
+  "U": 0.01666666666666667,
+  "Re": 0.3333333333333334,
+  "L_entry": 2.224535969247666e-05,
+  "De": 0.19245008972987535,
+  "alpha": 0.1,
+  "flow_bias": 0.06723585912486651,
+  "tests": [
+   {
+    "name": "H1 shallow channel",
+    "symbol": "h/w",
+    "value": 0.1,
+    "threshold": 0.1,
+    "ok": false
+   },
+   {
+    "name": "H2 creeping flow",
+    "symbol": "Re",
+    "value": 0.3333333333333334,
+    "threshold": 1.0,
+    "ok": true
+   },
+   {
+    "name": "H3 developed profile",
+    "symbol": "L_entry/L",
+    "value": 0.011122679846238331,
+    "threshold": 0.1,
+    "ok": true
+   },
+   {
+    "name": "H4 no Dean vortices",
+    "symbol": "De",
+    "value": 0.19245008972987535,
+    "threshold": 1.0,
+    "ok": true
+   }
+  ]
+ },
+ "stokes_einstein": [
+  {
+   "name": "protein (5 nm)",
+   "a": 2.5e-09,
+   "D": 8.735282699782485e-11,
+   "hindrance": 0.9997490000065312,
+   "t_res": 0.11999999999999998,
+   "sigma": 4.5787201792070635e-06,
+   "sigma_over_channel": 0.002289360089603532,
+   "tests": [
+    {
+     "name": "S1 continuum solvent",
+     "symbol": "a/a_w",
+     "value": 17.857142857142858,
+     "threshold": null,
+     "ok": true
+    },
+    {
+     "name": "S2 no wall hindrance",
+     "symbol": "a/(h/2)",
+     "value": 0.00025,
+     "threshold": 0.1,
+     "ok": true
+    },
+    {
+     "name": "S4 outside double layer",
+     "symbol": "a/lambda_D",
+     "value": 3.2894736842105265,
+     "threshold": null,
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "virus (100 nm)",
+   "a": 5e-08,
+   "D": 4.3676413498912424e-12,
+   "hindrance": 0.99498005225,
+   "t_res": 0.11999999999999998,
+   "sigma": 1.0238329570657012e-06,
+   "sigma_over_channel": 0.0005119164785328506,
+   "tests": [
+    {
+     "name": "S1 continuum solvent",
+     "symbol": "a/a_w",
+     "value": 357.1428571428571,
+     "threshold": null,
+     "ok": true
+    },
+    {
+     "name": "S2 no wall hindrance",
+     "symbol": "a/(h/2)",
+     "value": 0.004999999999999999,
+     "threshold": 0.1,
+     "ok": true
+    },
+    {
+     "name": "S4 outside double layer",
+     "symbol": "a/lambda_D",
+     "value": 65.78947368421052,
+     "threshold": null,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "name": "bacterium (1 um)",
+   "a": 5e-07,
+   "D": 4.3676413498912426e-13,
+   "hindrance": 0.94985225,
+   "t_res": 0.11999999999999998,
+   "sigma": 3.2376440878729985e-07,
+   "sigma_over_channel": 0.00016188220439364992,
+   "tests": [
+    {
+     "name": "S1 continuum solvent",
+     "symbol": "a/a_w",
+     "value": 3571.428571428571,
+     "threshold": null,
+     "ok": true
+    },
+    {
+     "name": "S2 no wall hindrance",
+     "symbol": "a/(h/2)",
+     "value": 0.049999999999999996,
+     "threshold": 0.1,
+     "ok": true
+    },
+    {
+     "name": "S4 outside double layer",
+     "symbol": "a/lambda_D",
+     "value": 657.8947368421053,
+     "threshold": null,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "name": "cell (10 um)",
+   "a": 5e-06,
+   "D": 4.367641349891242e-14,
+   "hindrance": 0.55025,
+   "t_res": 0.11999999999999998,
+   "sigma": 1.0238329570657012e-07,
+   "sigma_over_channel": 5.1191647853285055e-05,
+   "tests": [
+    {
+     "name": "S1 continuum solvent",
+     "symbol": "a/a_w",
+     "value": 35714.28571428572,
+     "threshold": null,
+     "ok": true
+    },
+    {
+     "name": "S2 no wall hindrance",
+     "symbol": "a/(h/2)",
+     "value": 0.5,
+     "threshold": 0.1,
+     "ok": false
+    },
+    {
+     "name": "S4 outside double layer",
+     "symbol": "a/lambda_D",
+     "value": 6578.947368421053,
+     "threshold": null,
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "pressure_Re1_Pa": 3072.112998861759,
+ "hele_shaw_all_ok": false,
+ "stokes_einstein_failures": [
+  [
+   "protein (5 nm)",
+   "a/lambda_D"
+  ],
+  [
+   "cell (10 um)",
+   "a/(h/2)"
+  ]
+ ]
+}

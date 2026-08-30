@@ -1,0 +1,165 @@
+{
+ "span_m": 8e-05,
+ "lam_m": 2e-05,
+ "t_metal_m": 1e-06,
+ "h_fluid_m": 2e-05,
+ "fab_envelope": 0.0138,
+ "meshes": [
+  1e-06,
+  8e-07,
+  6.25e-07,
+  5e-07
+ ],
+ "convergence": {
+  "comb": {
+   "compatible": true,
+   "widths_pc": [
+    3.12794078916957,
+    2.5903687515762943,
+    1.727949617317448,
+    1.4288224117584292
+   ],
+   "shrinking": true
+  },
+  "rings": {
+   "compatible": true,
+   "widths_pc": [
+    5.227169466270465,
+    4.30678307802515,
+    3.016170683342323,
+    2.5194297723502124
+   ],
+   "shrinking": true
+  },
+  "checker": {
+   "compatible": true,
+   "widths_pc": [
+    10.33581684887,
+    8.916458643645592,
+    5.497170414081581,
+    4.725197751932103
+   ],
+   "shrinking": true
+  },
+  "spiral": {
+   "compatible": true,
+   "widths_pc": [
+    4.33142406763074,
+    3.28647836129739,
+    2.3490921995273695,
+    1.8563899110395243
+   ],
+   "shrinking": true
+  }
+ },
+ "order_stable_across_meshes": true,
+ "orders_per_mesh": [
+  [
+   "checker",
+   "rings",
+   "spiral",
+   "comb"
+  ],
+  [
+   "checker",
+   "rings",
+   "spiral",
+   "comb"
+  ],
+  [
+   "checker",
+   "rings",
+   "spiral",
+   "comb"
+  ],
+  [
+   "checker",
+   "rings",
+   "spiral",
+   "comb"
+  ]
+ ],
+ "sensitivity": {
+  "comb": [
+   -0.17752725963155247,
+   -0.1489508113963839
+  ],
+  "rings": [
+   -0.2104495074074917,
+   -0.16006091196048744
+  ],
+  "checker": [
+   -0.4026263531541153,
+   -0.30812239811547326
+  ],
+  "spiral": [
+   -0.1851106374299708,
+   -0.14798283920918032
+  ]
+ },
+ "blank": {
+  "comb": [
+   1.1169348024986924e-13,
+   1.1273210592713158e-13
+  ],
+  "rings": [
+   1.2718690766630529e-13,
+   1.2989203837562574e-13
+  ],
+  "checker": [
+   2.9332510764819295e-13,
+   3.06062596531062e-13
+  ],
+  "spiral": [
+   1.4182785336676748e-13,
+   1.4393574300835736e-13
+  ]
+ },
+ "pairs": [
+  {
+   "a": "checker",
+   "b": "rings",
+   "disjoint": true,
+   "separation": 0.3613301726740998,
+   "survives": true
+  },
+  {
+   "a": "checker",
+   "b": "spiral",
+   "disjoint": true,
+   "separation": 0.4713806642291044,
+   "survives": true
+  },
+  {
+   "a": "checker",
+   "b": "comb",
+   "disjoint": true,
+   "separation": 0.5036319373023697,
+   "survives": true
+  },
+  {
+   "a": "rings",
+   "b": "spiral",
+   "disjoint": false,
+   "separation": -0.1424081112207458,
+   "survives": false
+  },
+  {
+   "a": "rings",
+   "b": "comb",
+   "disjoint": false,
+   "separation": -0.10023894461237655,
+   "survives": false
+  },
+  {
+   "a": "spiral",
+   "b": "comb",
+   "disjoint": false,
+   "separation": -0.1791734075059552,
+   "survives": false
+  }
+ ],
+ "n_pairs": 6,
+ "n_disjoint": 3,
+ "n_survive": 3
+}

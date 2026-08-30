@@ -1,0 +1,31 @@
+{
+  "title": "certified-biosensor-bounds: solver and study scripts for 'Certified-Bound Design of Capacitive and Conductimetric Lab-on-Chip Biosensors'",
+  "upload_type": "software",
+  "description": "Dual transmission-line-matrix / finite-volume solver with guaranteed two-sided bounds (Prager-Synge), verification suite (16 tests) and the nine study scripts that produce every figure and table of the paper: H. Talleb, 'Certified-Bound Design of Capacitive and Conductimetric Lab-on-Chip Biosensors: Guaranteed Geometric Factors, Detection Windows and Electrode Rankings', IEEE Sensors Journal, 2026, doi:10.1109/JSEN.2026.3726458.",
+  "creators": [
+    {
+      "name": "Talleb, Hakeim",
+      "affiliation": "Sorbonne Universite, Universite Paris-Saclay, CNRS, CentraleSupelec, Laboratoire de Genie Electrique et Electronique de Paris (GeePs), France",
+      "orcid": "0000-0002-2734-6242"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "certified bounds",
+    "guaranteed a posteriori error estimation",
+    "Prager-Synge",
+    "capacitive biosensor",
+    "lab-on-chip",
+    "interdigitated electrodes",
+    "transmission-line matrix method",
+    "uncertainty quantification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/JSEN.2026.3726458",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ]
+}
