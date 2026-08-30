@@ -1,5 +1,7 @@
 # certified-biosensor-bounds
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22181225.svg)](https://doi.org/10.5281/zenodo.22181225)
+
 Solver, verification suite and study scripts for the paper:
 
 H. Talleb, "Certified-Bound Design of Capacitive and Conductimetric
@@ -51,6 +53,10 @@ python3 study_fluidics.py
 python3 study_validity.py
 python3 study_thermal.py
 ```
+
+## Cite
+
+Code archive (concept DOI, all versions): [10.5281/zenodo.22181225](https://doi.org/10.5281/zenodo.22181225).
 
 ## License
 
